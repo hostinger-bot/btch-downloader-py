@@ -11,4 +11,4 @@ from .downloader import (
     pinterest
 )
 
-__version__ = "4.0.12"
+__version__ = "4.0.14"

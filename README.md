@@ -32,7 +32,7 @@ asyncio.run(main())
 - Simple and consistent interface
 
 ## Documentation
-For detailed usage, visit [https://github.com/hostinger-bot/btch-downloader-py](https://github.com/hostinger-bot/btch-downloader).
+For detailed usage, visit [https://github.com/hostinger-bot/btch-downloader-py](https://github.com/hostinger-bot/btch-downloader-py).
 
 ## License
 MIT License
