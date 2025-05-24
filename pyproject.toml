@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "btch-downloader"
+version = "4.0.12"
+description = "Social Media Downloader for Python"
+readme = "README.md"
+authors = [{name = "Tio", email = "tioclkp02@gmail.com"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+dependencies = ["httpx>=0.24.0"]
+keywords = ["AIO", "Instagram", "TikTok", "Facebook", "YouTube", "Twitter", "MediaFire", "Capcut", "Gdrive", "Pinterest"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/hostinger-bot/btch-downloader-py"
+Repository = "https://github.com/hostinger-bot/btch-downloader-py.git"
+Issues = "https://github.com/hostinger-bot/btch-downloader-py/issues"
+
+[tool.setuptools]
+packages = ["btch_downloader"]
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
