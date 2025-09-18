@@ -141,7 +141,7 @@ async def aio(url):
         data = await _fetch_api("aio", url)
         return {
             "developer": "@prm2.0",
-            "url": data.get("url")
+            "result": data
         }
     except Exception as error:
         return {
