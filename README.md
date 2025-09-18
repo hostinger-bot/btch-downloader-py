@@ -13,19 +13,11 @@ Install the library using pip:
 pip install btch-downloader
 ```
 
-### Node.js Installation
-If using a Node.js project, you can install the `btch-downloader` package from npm:
-
-```bash
-npm install btch-downloader
-```
-
-For Node.js usage details, refer to the [official npm package documentation](https://hostinger-bot.github.io/btch-downloader/).
 
 ### Prerequisites
 - Python 3.8 or higher (for Python usage)
 - Required dependencies: `httpx`, `asyncio` (for Python)
-- Some platforms (e.g., Instagram, Twitter) may require authentication or API keys for full functionality. Refer to the [official Python documentation](https://github.com/hostinger-bot/btch-downloader-py) for setup details.
+- Full Documentation [Official documentation](https://github.com/hostinger-bot/btch-downloader-py).
 
 ## Usage
 
@@ -38,7 +30,7 @@ from btch_downloader import ttdl, igdl, twitter, youtube, fbdown, aio, mediafire
 
 async def main():
     # TikTok Downloader
-    tiktok_result = await ttdl("https://vm.tiktok.com/ZGJAmhSrp/")
+    tiktok_result = await ttdl("https://vt.tiktok.com/ZSBnSFTeK/")
     print("TikTok:", tiktok_result)
 
     # Instagram Downloader
@@ -136,7 +128,7 @@ if __name__ == "__main__":
 Run the script with a specific function and URL/keyword, for example:
 
 ```bash
-python3 test.py ttdl "https://vm.tiktok.com/ZGJAmhSrp/"
+python3 test.py ttdl "https://vt.tiktok.com/ZSBnSFTeK/"
 python3 test.py igdl "https://www.instagram.com/p/ByxKbUSnubS/?utm_source=ig_web_copy_link"
 python3 test.py youtube "https://www.youtube.com/watch?v=Z28dtg_QmFw"
 python3 test.py fbdown "https://www.facebook.com/watch/?v=1393572814172251"
@@ -190,7 +182,6 @@ Each function returns a dictionary with the following possible keys:
 
 ## Documentation
 - For detailed Python usage, including advanced configuration and authentication setup, visit [https://github.com/hostinger-bot/btch-downloader-py](https://github.com/hostinger-bot/btch-downloader-py).
-- For Node.js usage, refer to [https://github.com/hostinger-bot/btch-downloader](https://github.com/hostinger-bot/btch-downloader).
 
 ## License
 MIT License
