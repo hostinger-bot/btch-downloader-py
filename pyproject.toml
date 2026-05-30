@@ -8,7 +8,7 @@ version = "6.0.0"
 description = "Social Media Downloader for Python"
 readme = "README.md"
 authors = [{name = "Tio", email = "tioclkp02@gmail.com"}]
-license = {file = "LICENSE"}
+license = "MIT"
 requires-python = ">=3.8"
 dependencies = ["httpx>=0.24.0"]
 keywords = [
@@ -20,7 +20,6 @@ keywords = [
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 
