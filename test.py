@@ -1,7 +1,7 @@
 import asyncio
 import json
 import sys
-from btch_downloader import ttdl, igdl, twitter, youtube, fbdown, aio, mediafire, capcut, gdrive, pinterest
+from btch_downloader import ttdl, igdl, twitter, youtube, fbdown, aio, mediafire, capcut, gdrive, pinterest, douyin, xiaohongshu, snackvideo, cocofun, spotify, yts, soundcloud, threads, kuaishou
 
 async def main(url, function_name):
     try:
@@ -27,6 +27,24 @@ async def main(url, function_name):
             result = await pinterest(url)
         elif function_name == "pinterest_search":
             result = await pinterest(url)  # For search, URL is a keyword
+        elif function_name == "douyin":
+            result = await douyin(url)
+        elif function_name == "xiaohongshu":
+            result = await xiaohongshu(url)
+        elif function_name == "snackvideo":
+            result = await snackvideo(url)
+        elif function_name == "cocofun":
+            result = await cocofun(url)
+        elif function_name == "spotify":
+            result = await spotify(url)
+        elif function_name == "yts":
+            result = await yts(url)
+        elif function_name == "soundcloud":
+            result = await soundcloud(url)
+        elif function_name == "threads":
+            result = await threads(url)
+        elif function_name == "kuaishou":
+            result = await kuaishou(url)
         else:
             raise ValueError("Invalid function name")
         print(json.dumps(result, indent=2))

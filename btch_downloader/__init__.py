@@ -8,7 +8,16 @@ from .downloader import (
     mediafire,
     capcut,
     gdrive,
-    pinterest
+    pinterest,
+    douyin,
+    xiaohongshu,
+    snackvideo,
+    cocofun,
+    spotify,
+    yts,
+    soundcloud,
+    threads,
+    kuaishou
 )
 
-__version__ = "4.0.15"
+__version__ = "6.0.0"

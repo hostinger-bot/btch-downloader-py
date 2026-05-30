@@ -2,12 +2,12 @@ import httpx
 import json
 
 # Config
-__version__ = "4.0.15"
+__version__ = "6.0.0"
 BASE_URL = "https://backend1.tioo.eu.org"
 
 async def _fetch_api(endpoint, url):
     """Fetch API."""
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(timeout=60.0) as client:
         try:
             response = await client.get(
                 f"{BASE_URL}/{endpoint}",
@@ -135,7 +135,7 @@ async def fbdown(url):
             "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
         }
 
-# AIO Downloader
+# AIO Downloader (Unmaintained)
 async def aio(url):
     try:
         data = await _fetch_api("aio", url)
@@ -151,7 +151,7 @@ async def aio(url):
             "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
         }
 
-# MediaFire Downloader
+# MediaFire Downloader (Unmaintained)
 async def mediafire(url):
     try:
         data = await _fetch_api("mediafire", url)
@@ -206,6 +206,150 @@ async def pinterest(mdl):
         return {
             "developer": "@prm2.0",
             "result": data.get("result")
+        }
+    except Exception as error:
+        return {
+            "developer": "@prm2.0",
+            "status": False,
+            "message": str(error),
+            "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
+        }
+
+# Douyin Downloader
+async def douyin(url):
+    try:
+        data = await _fetch_api("douyin", url)
+        return {
+            "developer": "@prm2.0",
+            "result": data
+        }
+    except Exception as error:
+        return {
+            "developer": "@prm2.0",
+            "status": False,
+            "message": str(error),
+            "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
+        }
+
+# Xiaohongshu Downloader
+async def xiaohongshu(url):
+    try:
+        data = await _fetch_api("rednote", url)
+        return {
+            "developer": "@prm2.0",
+            "result": data
+        }
+    except Exception as error:
+        return {
+            "developer": "@prm2.0",
+            "status": False,
+            "message": str(error),
+            "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
+        }
+
+# SnackVideo Downloader
+async def snackvideo(url):
+    try:
+        data = await _fetch_api("snackvideo", url)
+        return {
+            "developer": "@prm2.0",
+            "result": data
+        }
+    except Exception as error:
+        return {
+            "developer": "@prm2.0",
+            "status": False,
+            "message": str(error),
+            "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
+        }
+
+# Cocofun Downloader
+async def cocofun(url):
+    try:
+        data = await _fetch_api("cocofun", url)
+        return {
+            "developer": "@prm2.0",
+            "result": data
+        }
+    except Exception as error:
+        return {
+            "developer": "@prm2.0",
+            "status": False,
+            "message": str(error),
+            "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
+        }
+
+# Spotify Downloader
+async def spotify(url):
+    try:
+        data = await _fetch_api("spotify", url)
+        return {
+            "developer": "@prm2.0",
+            "result": data
+        }
+    except Exception as error:
+        return {
+            "developer": "@prm2.0",
+            "status": False,
+            "message": str(error),
+            "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
+        }
+
+# YouTube Search
+async def yts(query):
+    try:
+        data = await _fetch_api("yts", query)
+        return {
+            "developer": "@prm2.0",
+            "result": data
+        }
+    except Exception as error:
+        return {
+            "developer": "@prm2.0",
+            "status": False,
+            "message": str(error),
+            "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
+        }
+
+# SoundCloud Downloader
+async def soundcloud(url):
+    try:
+        data = await _fetch_api("soundcloud", url)
+        return {
+            "developer": "@prm2.0",
+            "result": data
+        }
+    except Exception as error:
+        return {
+            "developer": "@prm2.0",
+            "status": False,
+            "message": str(error),
+            "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
+        }
+
+# Threads Downloader
+async def threads(url):
+    try:
+        data = await _fetch_api("threads", url)
+        return {
+            "developer": "@prm2.0",
+            "result": data
+        }
+    except Exception as error:
+        return {
+            "developer": "@prm2.0",
+            "status": False,
+            "message": str(error),
+            "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
+        }
+
+# Kuaishou Downloader
+async def kuaishou(url):
+    try:
+        data = await _fetch_api("kuaishou", url)
+        return {
+            "developer": "@prm2.0",
+            "result": data
         }
     except Exception as error:
         return {
