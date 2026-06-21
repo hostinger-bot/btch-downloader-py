@@ -237,7 +237,7 @@ async def xiaohongshu(url):
         data = await _fetch_api("rednote", url)
         return {
             "developer": "@prm2.0",
-            "result": data
+            "result": data.get("result") if data.get("result") else data
         }
     except Exception as error:
         return {
