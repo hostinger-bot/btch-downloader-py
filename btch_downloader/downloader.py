@@ -247,6 +247,23 @@ async def xiaohongshu(url):
             "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
         }
 
+# Xiaohongshu Profile Downloader
+async def xiaohongshu_profile(url):
+    try:
+        data = await _fetch_api("rednote-profile", url)
+        return {
+            "developer": "@prm2.0",
+            "result": data.get("result") if data.get("result") else data
+        }
+    except Exception as error:
+        return {
+            "developer": "@prm2.0",
+            "status": False,
+            "message": str(error),
+            "note": "Please check the documentation at https://github.com/hostinger-bot/btch-downloader-py"
+        }
+
+
 # SnackVideo Downloader
 async def snackvideo(url):
     try:

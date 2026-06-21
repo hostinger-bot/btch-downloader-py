@@ -11,6 +11,7 @@ from .downloader import (
     pinterest,
     douyin,
     xiaohongshu,
+    xiaohongshu_profile,
     snackvideo,
     cocofun,
     spotify,
@@ -20,4 +21,4 @@ from .downloader import (
     kuaishou
 )
 
-__version__ = "6.0.0"
+__version__ = "6.0.1"

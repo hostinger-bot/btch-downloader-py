@@ -55,6 +55,7 @@ asyncio.run(main())
 | `pinterest`    | Pinterest      | `https://pin.it/4CVodSq` or query (e.g., "Zhao Lusi")                             |
 | `douyin`       | Douyin         | `https://v.douyin.com/ikq8axJ/`                                                   |
 | `xiaohongshu`  | Xiaohongshu    | `http://xhslink.com/o/21DKXV988zp`                                                |
+| `xiaohongshu_profile` | Xiaohongshu Profile | `https://www.xiaohongshu.com/user/profile/abc123`                                 |
 | `snackvideo`   | SnackVideo     | `https://s.snackvideo.com/p/j9jKr9dR`                                             |
 | `cocofun`      | Cocofun        | `https://www.icocofun.com/share/post/379250110809`                                |
 | `spotify`      | Spotify        | `https://open.spotify.com/track/3zakx7RAwdkUQlOoQ7SJRt`                           |
