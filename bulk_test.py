@@ -2,7 +2,7 @@ import asyncio
 import json
 from btch_downloader import (
     ttdl, igdl, twitter, youtube, fbdown, aio, mediafire, capcut, gdrive, pinterest,
-    douyin, xiaohongshu, snackvideo, cocofun, spotify, yts, soundcloud, threads, kuaishou
+    douyin, xiaohongshu, xiaohongshu_profile, snackvideo, cocofun, spotify, yts, soundcloud, threads, kuaishou
 )
 
 # Test cases for each platform using official examples
@@ -17,6 +17,7 @@ TEST_CASES = {
     "pinterest": "https://pin.it/4CVodSq",
     "douyin": "https://v.douyin.com/ikq8axJ/",
     "xiaohongshu": "http://xhslink.com/o/21DKXV988zp",
+    "xiaohongshu_profile": "https://xhslink.com/m/mHN7PjTniV",
     "snackvideo": "https://s.snackvideo.com/p/j9jKr9dR",
     "cocofun": "https://www.icocofun.com/share/post/379250110809",
     "spotify": "https://open.spotify.com/track/3zakx7RAwdkUQlOoQ7SJRt",
@@ -55,8 +56,9 @@ async def main():
     
     functions = {
         "ttdl": ttdl, "igdl": igdl, "twitter": twitter, "youtube": youtube, 
-        "fbdown": fbdown, "capcut": capcut, "gdrive": gdrive, "pinterest": pinterest,
-        "douyin": douyin, "xiaohongshu": xiaohongshu, "snackvideo": snackvideo, 
+        "fbdown": fbdown, "aio": aio, "mediafire": mediafire, "capcut": capcut, 
+        "gdrive": gdrive, "pinterest": pinterest, "douyin": douyin, 
+        "xiaohongshu": xiaohongshu, "xiaohongshu_profile": xiaohongshu_profile, "snackvideo": snackvideo, 
         "cocofun": cocofun, "spotify": spotify, "yts": yts, 
         "soundcloud": soundcloud, "threads": threads, "kuaishou": kuaishou
     }
