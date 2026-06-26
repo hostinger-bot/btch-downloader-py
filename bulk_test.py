@@ -7,7 +7,7 @@ Tests all platform functions using official example URLs.
 
 import asyncio
 import json
-from btch_downloader import __version__, (
+from btch_downloader import (
     ttdl, igdl, twitter, youtube, fbdown,
     aio, mediafire, capcut, gdrive, pinterest,
     douyin, xiaohongshu, xiaohongshu_profile,
@@ -69,7 +69,7 @@ async def run_test(name, func, url):
 async def main():
     """Run all platform tests and print summary."""
     print("="*60)
-    print(f"   BTCH-DOWNLOADER BULK TEST (OFFICIAL EXAMPLES) (v{__version__})")
+    print("   BTCH-DOWNLOADER BULK TEST (OFFICIAL EXAMPLES)")
     print("="*60)
 
     functions = {
