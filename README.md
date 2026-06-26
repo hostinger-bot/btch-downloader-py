@@ -1,4 +1,5 @@
 # btch-downloader
+[![Pylint](https://github.com/hostinger-bot/btch-downloader-py/actions/workflows/pylint.yml/badge.svg)](https://github.com/hostinger-bot/btch-downloader-py/actions/workflows/pylint.yml)
 
 A lightweight Python library for downloading videos, images, and audio from Instagram, TikTok, YouTube, Capcut, Pinterest, Twitter, X, Google Drive, MediaFire, Douyin, SnackVideo, Xiaohongshu, Cocofun, Spotify, Youtube Search, SoundCloud, Threads, Kuaishou and Facebook.
 
