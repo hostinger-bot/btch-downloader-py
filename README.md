@@ -1,7 +1,11 @@
 # btch-downloader
-[![Pylint](https://github.com/hostinger-bot/btch-downloader-py/actions/workflows/pylint.yml/badge.svg)](https://github.com/hostinger-bot/btch-downloader-py/actions/workflows/pylint.yml)
+<p align="center">
+  <a href="https://github.com/hostinger-bot/btch-downloader-py/actions/workflows/pylint.yml">
+    <img src="https://github.com/hostinger-bot/btch-downloader-py/actions/workflows/pylint.yml/badge.svg" alt="Pylint">
+  </a>
+</p>
 
-A lightweight Python library for downloading videos, images, and audio from Instagram, TikTok, YouTube, Capcut, Pinterest, Twitter, X, Google Drive, MediaFire, Douyin, SnackVideo, Xiaohongshu, Cocofun, Spotify, Youtube Search, SoundCloud, Threads, Kuaishou and Facebook.
+A lightweight Python library for downloading videos, images, and audio from Instagram, TikTok, YouTube, Capcut, Pinterest, Twitter, X, Google Drive, MediaFire, Douyin, SnackVideo, Xiaohongshu, Xiaohongshu Profile, Cocofun, Spotify, Youtube Search, SoundCloud, Threads, Kuaishou and Facebook.
 
 ## Installation
 
@@ -70,10 +74,9 @@ asyncio.run(main())
 *\*Unmaintained*
 
 ## Features
-- Download content from 17+ social media platforms.
+- Download content from 19+ social media platforms.
 - Support for YouTube Search (`yts`).
 - Asynchronous API calls using `httpx`.
 - Simple and consistent interface across all services.
-
 ## License
 MIT License
