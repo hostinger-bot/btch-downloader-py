@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "btch-downloader"
-version = "6.0.36"
 description = "Social Media Downloader for Python"
 readme = "README.md"
 authors = [{name = "Tio", email = "tioclkp02@gmail.com"}]
 license = "MIT"
 requires-python = ">=3.8"
+dynamic = ["version"]
 dependencies = ["httpx>=0.24.0"]
 keywords = [
     "AIO", "Instagram", "TikTok", "Facebook", "YouTube", "Twitter", "X",
@@ -31,5 +31,7 @@ Issues = "https://github.com/hostinger-bot/btch-downloader-py/issues"
 [tool.setuptools]
 packages = ["btch_downloader"]
 
+[tool.setuptools.dynamic]
+version = {attr = "btch_downloader.__version__"}
 [tool.pytest.ini_options]
 asyncio_default_fixture_loop_scope = "function"

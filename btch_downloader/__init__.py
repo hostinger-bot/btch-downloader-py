@@ -1,3 +1,5 @@
+__version__ = "6.0.36"
+
 from .downloader import (
     aio,
     fbdown,
