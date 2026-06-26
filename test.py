@@ -1,61 +1,62 @@
+"""CLI entry point for testing individual btch-downloader platforms.
+
+"""
+
+# pylint: disable=W0718
+
 import asyncio
 import json
 import sys
-from btch_downloader import ttdl, igdl, twitter, youtube, fbdown, aio, mediafire, capcut, gdrive, pinterest, douyin, xiaohongshu, snackvideo, cocofun, spotify, yts, soundcloud, threads, kuaishou
+from btch_downloader import (
+    ttdl, igdl, twitter, youtube, fbdown,
+    aio, mediafire, capcut, gdrive, pinterest,
+    douyin, xiaohongshu, snackvideo,
+    cocofun, spotify, yts, soundcloud,
+    threads, kuaishou
+)
+
+FUNCTIONS = {
+    "ttdl": ttdl,
+    "igdl": igdl,
+    "twitter": twitter,
+    "youtube": youtube,
+    "fbdown": fbdown,
+    "aio": aio,
+    "mediafire": mediafire,
+    "capcut": capcut,
+    "gdrive": gdrive,
+    "pinterest": pinterest,
+    "pinterest_search": pinterest,
+    "douyin": douyin,
+    "xiaohongshu": xiaohongshu,
+    "snackvideo": snackvideo,
+    "cocofun": cocofun,
+    "spotify": spotify,
+    "yts": yts,
+    "soundcloud": soundcloud,
+    "threads": threads,
+    "kuaishou": kuaishou,
+}
+
 
 async def main(url, function_name):
+    """Call the selected platform function and print result as JSON."""
+    func = FUNCTIONS.get(function_name)
+    if func is None:
+        raise ValueError("Invalid function name")
     try:
-        if function_name == "ttdl":
-            result = await ttdl(url)
-        elif function_name == "igdl":
-            result = await igdl(url)
-        elif function_name == "twitter":
-            result = await twitter(url)
-        elif function_name == "youtube":
-            result = await youtube(url)
-        elif function_name == "fbdown":
-            result = await fbdown(url)
-        elif function_name == "aio":
-            result = await aio(url)
-        elif function_name == "mediafire":
-            result = await mediafire(url)
-        elif function_name == "capcut":
-            result = await capcut(url)
-        elif function_name == "gdrive":
-            result = await gdrive(url)
-        elif function_name == "pinterest":
-            result = await pinterest(url)
-        elif function_name == "pinterest_search":
-            result = await pinterest(url)  # For search, URL is a keyword
-        elif function_name == "douyin":
-            result = await douyin(url)
-        elif function_name == "xiaohongshu":
-            result = await xiaohongshu(url)
-        elif function_name == "snackvideo":
-            result = await snackvideo(url)
-        elif function_name == "cocofun":
-            result = await cocofun(url)
-        elif function_name == "spotify":
-            result = await spotify(url)
-        elif function_name == "yts":
-            result = await yts(url)
-        elif function_name == "soundcloud":
-            result = await soundcloud(url)
-        elif function_name == "threads":
-            result = await threads(url)
-        elif function_name == "kuaishou":
-            result = await kuaishou(url)
-        else:
-            raise ValueError("Invalid function name")
+        result = await func(url)
         print(json.dumps(result, indent=2))
     except Exception as e:
         print(json.dumps({"error": str(e)}), file=sys.stderr)
         sys.exit(1)
 
+
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print(json.dumps({"error": "Please provide a function name and URL/keyword"}), file=sys.stderr)
+        MSG = "Please provide a function name and URL/keyword"
+        print(json.dumps({"error": MSG}), file=sys.stderr)
         sys.exit(1)
-    function_name = sys.argv[1]
-    url = sys.argv[2]
-    asyncio.run(main(url, function_name))
+    fn_name = sys.argv[1]
+    target_url = sys.argv[2]
+    asyncio.run(main(target_url, fn_name))
