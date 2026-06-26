@@ -2,7 +2,6 @@
 
 Tests all platform functions using official example URLs.
 """
-
 # pylint: disable=W0718
 
 import asyncio
@@ -12,7 +11,7 @@ from btch_downloader import (
     aio, mediafire, capcut, gdrive, pinterest,
     douyin, xiaohongshu, xiaohongshu_profile,
     snackvideo, cocofun, spotify, yts,
-    soundcloud, threads, kuaishou
+    soundcloud, threads, kuaishou,
 )
 
 # Test cases for each platform using official examples
@@ -80,7 +79,7 @@ async def main():
         "xiaohongshu_profile": xiaohongshu_profile,
         "snackvideo": snackvideo, "cocofun": cocofun,
         "spotify": spotify, "yts": yts,
-        "soundcloud": soundcloud, "threads": threads, "kuaishou": kuaishou
+        "soundcloud": soundcloud, "threads": threads, "kuaishou": kuaishou,
     }
 
     results = []
