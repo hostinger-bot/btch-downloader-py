@@ -1,4 +1,4 @@
-__version__ = "6.0.36"
+__version__ = "6.0.37"
 
 from .downloader import (
     aio,
@@ -22,5 +22,3 @@ from .downloader import (
     threads,
     kuaishou
 )
-
-__version__ = "6.0.36"
