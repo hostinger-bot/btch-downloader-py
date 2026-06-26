@@ -21,4 +21,4 @@ from .downloader import (
     kuaishou
 )
 
-__version__ = "6.0.35"
+__version__ = "6.0.36"

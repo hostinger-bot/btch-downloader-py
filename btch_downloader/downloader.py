@@ -2,7 +2,7 @@ import httpx
 import json
 
 # Config
-__version__ = "6.0.0"
+__version__ = "6.0.36"
 BASE_URL = "https://backend1.tioo.eu.org"
 
 async def _fetch_api(endpoint, url):
