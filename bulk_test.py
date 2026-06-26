@@ -31,8 +31,8 @@ TEST_CASES = {
     "cocofun": "https://www.icocofun.com/share/post/379250110809",
     "spotify": "https://open.spotify.com/track/3zakx7RAwdkUQlOoQ7SJRt",
     "yts": "movie title 2023",
-    "soundcloud": "https://soundcloud.com/issabella-marchelina/sisa-rasa-mahalini-official-audio",
-    "threads": "https://www.threads.net/@cindyyuvia/post/C_Nqx3khgkI/?xmt=AQGzpsCvidh8IwIqOvq4Ov05Zd5raANiVdvCujM_pjBa1Q",
+    "soundcloud": "https://soundcloud.com/issabella-marchelina/sisa-rasa-mahalini-official-audio",  # pylint: disable=line-too-long
+    "threads": "https://www.threads.net/@cindyyuvia/post/C_Nqx3khgkI/?xmt=AQGzpsCvidh8IwIqOvq4Ov05Zd5raANiVdvCujM_pjBa1Q",  # pylint: disable=line-too-long
     "kuaishou": "https://v.kuaishou.com/JT195ZHT",
     "aio": "https://www.tiktok.com/@omagadsus/video/7025456384175017243",
 }
