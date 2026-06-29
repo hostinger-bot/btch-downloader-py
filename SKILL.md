@@ -1,6 +1,6 @@
 ---
 name: btch-downloader-py
-description: "Use this skill whenever the user wants to download media (videos, images, audio) from social media platforms using the btch-downloader Python library. Triggers include: downloading from Instagram, TikTok, YouTube, Facebook, Twitter/X, Pinterest, Spotify, SoundCloud, Threads, CapCut, Google Drive, MediaFire, Douyin, SnackVideo, Xiaohongshu, Xiaohongshu Profile, Cocofun, or Kuaishou using Python; using the igdl, ttdl, fbdown, youtube, twitter, xiaohongshu_profile, or aio functions; building a media downloader bot or app in Python. Do NOT use for JavaScript/TypeScript-based downloaders."
+description: "Use this skill whenever the user wants to download media (videos, images, audio) from social media platforms using the btch-downloader Python client SDK. Triggers include: downloading from Instagram, TikTok, YouTube, Facebook, Twitter/X, Pinterest, Spotify, SoundCloud, Threads, CapCut, Google Drive, MediaFire, Douyin, SnackVideo, Xiaohongshu, Xiaohongshu Profile, Cocofun, or Kuaishou using Python; using the igdl, ttdl, fbdown, youtube, twitter, xiaohongshu_profile, or aio functions; building a media downloader bot or app in Python. Do NOT use for JavaScript/TypeScript-based downloaders."
 license: MIT
 ---
 
@@ -8,7 +8,7 @@ license: MIT
 
 ## Overview
 
-`btch-downloader-py` is a lightweight Python library by [@BOTCAHX](https://github.com/hostinger-bot) for fetching downloadable media links from social media platforms. It does **not** directly scrape platforms — all resolution is handled by the backend service at `backend1.tioo.eu.org`. Each function is an async coroutine returning a dict with media URLs and metadata.
+`btch-downloader-py` is a lightweight Python client SDK by [@BOTCAHX](https://github.com/hostinger-bot) for fetching downloadable media links from social media platforms. It does **not** directly scrape platforms — all resolution is handled by the backend service at `backend1.tioo.eu.org`. Each function is an async coroutine returning a dict with media URLs and metadata.
 
 - **PyPI:** `btch-downloader`
 - **GitHub:** `hostinger-bot/btch-downloader-py`
@@ -92,7 +92,7 @@ else:
 ## Important Notes
 
 - Only public media can be downloaded. Private content is not accessible.
-- This library is not affiliated with or endorsed by any of the supported platforms.
+- This SDK is not affiliated with or endorsed by any of the supported platforms.
 - Always ensure you have the right to download and use the media before doing so.
 - `mediafire` and `aio` support are **no longer maintained**.
 - The backend (`backend1.tioo.eu.org`) must be reachable; all actual resolution happens there.

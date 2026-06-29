@@ -5,12 +5,12 @@
   </a>
 </p>
 
-A lightweight Python library for downloading videos, images, and audio from Instagram, TikTok, YouTube, Capcut, Pinterest, Twitter, X, Google Drive, MediaFire, Douyin, SnackVideo, Xiaohongshu, Xiaohongshu Profile, Cocofun, Spotify, Youtube Search, SoundCloud, Threads, Kuaishou and Facebook.
+A lightweight Python client SDK for downloading videos, images, and audio from Instagram, TikTok, YouTube, Capcut, Pinterest, Twitter, X, Google Drive, MediaFire, Douyin, SnackVideo, Xiaohongshu, Xiaohongshu Profile, Cocofun, Spotify, Youtube Search, SoundCloud, Threads, Kuaishou and Facebook.
 
 ## Installation
 
 ### Python Installation
-Install the library using pip:
+Install the SDK using pip:
 
 ```bash
 pip install btch-downloader
@@ -24,7 +24,7 @@ pip install btch-downloader
 ## Usage
 
 ### Basic Usage
-The library provides asynchronous functions to download content from supported platforms.
+The SDK provides asynchronous functions to download content from supported platforms.
 
 ```python
 import asyncio

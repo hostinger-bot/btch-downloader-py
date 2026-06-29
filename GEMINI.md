@@ -5,7 +5,7 @@ This document provides mandatory guidance and instructions for AI agents (includ
 ## Core Architecture & Mandates
 
 - **Primary Goal:** This project is a client SDK (Python) for downloading media from social platforms.
-- **NO SCRAPING:** Never add direct scraping logic to this library. All requests MUST be delegated to the backend service at `backend1.tioo.eu.org`.
+- **NO SCRAPING:** Never add direct scraping logic to this SDK. All requests MUST be delegated to the backend service at `backend1.tioo.eu.org`.
 - **Language:** All new development must be in **Python** (`.py` files only).
 - **Async:** All platform functions are `async def` and use `httpx.AsyncClient`.
 - **Source Location:** Main source code resides in `btch_downloader/` package directory.

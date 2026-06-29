@@ -8,7 +8,7 @@ This file provides guidance for AI agents (e.g. Claude Code, GitHub Copilot, aut
 
 ## Project Overview
 
-**btch-downloader-py** is a lightweight Python library that acts as a client SDK for downloading videos, images, and audio from social media platforms. It does **not** scrape platforms directly — all platform-specific logic is handled by the backend service at `backend1.tioo.eu.org`.
+**btch-downloader-py** is a lightweight Python client SDK for downloading videos, images, and audio from social media platforms. It does **not** scrape platforms directly — all platform-specific logic is handled by the backend service at `backend1.tioo.eu.org`.
 
 | Field          | Value                                                    |
 |----------------|----------------------------------------------------------|
@@ -162,7 +162,7 @@ Also see `bulk_test.py` and `test.py` for manual integration tests against the l
 
 ## Important Notes
 
-- This library is **only for publicly accessible content**.
+- This SDK is **only for publicly accessible content**.
 - It is **not affiliated** with any platform.
 - Ensure you have **permission or copyright clearance** before downloading any content.
 - The backend (`backend1.tioo.eu.org`) must be reachable.
