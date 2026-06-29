@@ -3,7 +3,7 @@
 Exports all platform download functions and ``__version__``.
 """
 
-__version__ = "6.0.37"
+__version__ = "6.0.38"
 
 from .downloader import (
     aio,

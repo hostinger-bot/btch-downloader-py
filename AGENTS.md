@@ -1,6 +1,6 @@
 # AGENTS.md — btch-downloader-py
 
-> Last verified: **June 26, 2026** · Latest stable version: **6.0.37**
+> Last verified: **June 29, 2026** · Latest stable version: **6.0.38**
 
 This file provides guidance for AI agents (e.g. Claude Code, GitHub Copilot, autonomous coding agents) working inside the **btch-downloader-py** repository.
 
@@ -13,7 +13,7 @@ This file provides guidance for AI agents (e.g. Claude Code, GitHub Copilot, aut
 | Field          | Value                                                    |
 |----------------|----------------------------------------------------------|
 | PyPI package   | `btch-downloader`                                        |
-| Latest version | `6.0.37`                                                 |
+| Latest version | `6.0.38`                                                 |
 | Repository     | https://github.com/hostinger-bot/btch-downloader-py      |
 | License        | MIT                                                      |
 | Author         | BOTCAHX / @prm2.0                                        |
